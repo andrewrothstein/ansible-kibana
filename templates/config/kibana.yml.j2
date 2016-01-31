@@ -16,7 +16,7 @@ server.port: {{kibana_port}}
 {% if kibana_es_url is defined %}
 elasticsearch.url: "{{kibana_es_url}}"
 {% elif groups['elasticsearch'] is defined %}
-elasticsearch.url: "http://{{elasticsearch[0]}}:9200"
+elasticsearch.url: "http://{{groups['elasticsearch'][0]}}:9200"
 {% else %}
 # elasticsearch.url: "http://localhost:9200"
 {% endif %}
