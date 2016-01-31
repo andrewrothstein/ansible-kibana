@@ -1,0 +1,50 @@
+---
+- name: download...
+  get_url: >-
+    url={{kibana_tgz_url}}
+    dest=/tmp/{{kibana_tgz}}
+    owner=root
+    group=root
+    mode=0644
+
+- name: unarchive...
+  unarchive: >-
+    copy=no
+    src=/tmp/{{kibana_tgz}}
+    dest=/opt
+    owner=root
+    group=root
+
+- name: link...
+  file: >-
+    src=/opt/{{kibana_name}}
+    dest=/opt/kibana
+    state=link
+    owner=root
+    group=root
+
+- name: configure...
+  template: >-
+    src=config/kibana.yml.j2
+    dest=/opt/kibana/config/kibana.yml
+    owner=root
+    group=root
+    mode=644
+
+- name: install systemd service...
+  template: >-
+    src=etc/systemd/system/kibana.service.j2
+    dest=/etc/systemd/system/kibana.service
+    owner=root
+    group=root
+    mode=644
+  register: kibana_service_updated
+
+- name: systemctl daemon-reload
+  when: kibana_service_updated.changed
+  command: systemctl daemon-reload
+
+- name: kibana service
+  service: name=kibana state=restarted enabled=yes
+  
+    
