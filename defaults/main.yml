@@ -2,4 +2,4 @@
 kibana_ver : '4.3.1'
 kibana_platform : 'linux-x64'
 kibana_mirror : 'https://download.elastic.co/kibana/kibana'
-kibana_es_url : 'http://localhost:9200'
+
