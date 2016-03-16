@@ -1,5 +1,5 @@
 ---
-kibana_ver : '4.4.1'
+kibana_ver : '4.4.2'
 kibana_platform : 'linux-x64'
 kibana_mirror : 'https://download.elastic.co/kibana/kibana'
 #kibana_port : 5601
