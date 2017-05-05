@@ -3,3 +3,6 @@
 kibana_name : 'kibana-{{kibana_ver}}-{{kibana_platform}}'
 kibana_tgz : '{{kibana_name}}.tar.gz'
 kibana_tgz_url : '{{kibana_mirror}}/{{kibana_tgz}}'
+
+kibana_install_dir: '{{kibana_parent_install_dir}}/{{kibana_name}}'
+kibana_link_dir: '{{kibana_parent_install_dir}}/kibana'

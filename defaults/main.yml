@@ -1,6 +1,8 @@
 ---
-kibana_ver : '5.0.2'
-kibana_platform : 'linux-x64'
-kibana_mirror : 'https://download.elastic.co/kibana/kibana'
-#kibana_port : 5601
+kibana_ver : '5.4.0'
+kibana_checksum: sha256:58838dcb5b3195455e1eb05926fed27d882a3476370facfc35d39d837940b1bc
+kibana_platform : linux-x86_64
+kibana_mirror : https://artifacts.elastic.co/downloads/kibana
+kibana_parent_install_dir: /usr/local
+
 
