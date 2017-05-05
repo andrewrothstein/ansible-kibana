@@ -14,7 +14,7 @@
   unarchive:
     copy: no
     src: /tmp/{{kibana_tgz}}
-    dest: '{{kibana_install_parent_dir}}'
+    dest: '{{kibana_parent_install_dir}}'
     creates: '{{kibana_install_dir}}'
 
 - name: link...
