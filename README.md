@@ -2,7 +2,7 @@ andrewrothstein.kibana
 =============================
 [![Build Status](https://travis-ci.org/andrewrothstein/ansible-kibana.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-kibana)
 
-Installs [Kibana](https://www.elastic.co/products/kibana).
+Installs [Kibana](https://www.elastic.co/products/kibana)
 
 Requirements
 ------------
