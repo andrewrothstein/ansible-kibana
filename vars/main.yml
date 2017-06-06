@@ -2,6 +2,8 @@
 # vars file for kibana
 kibana_name : 'kibana-{{kibana_ver}}-{{kibana_platform}}'
 kibana_tgz : '{{kibana_name}}.tar.gz'
+
+# https://artifacts.elastic.co/downloads/kibana/kibana-5.4.1-linux-x86_64.tar.gz
 kibana_tgz_url : '{{kibana_mirror}}/{{kibana_tgz}}'
 
 kibana_install_dir: '{{kibana_parent_install_dir}}/{{kibana_name}}'
