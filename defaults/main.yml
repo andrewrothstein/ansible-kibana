@@ -1,8 +1,6 @@
 ---
-kibana_ver : '5.4.1'
-kibana_checksum: sha256:efab73464c6cbc90089acf9275e43c7b3c2bbe8fb62c710567ac523a65c3394b
+kibana_ver : '5.4.2'
+kibana_checksum: sha256:dec4de4f7510a0a1567f2f1862ace2b48abb7d82164e6144d1f71aa345eb732c
 kibana_platform : linux-x86_64
 kibana_mirror : https://artifacts.elastic.co/downloads/kibana
 kibana_parent_install_dir: /usr/local
-
-
