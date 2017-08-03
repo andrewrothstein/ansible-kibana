@@ -15,12 +15,17 @@ galaxy_info:
         - 23
         - 24
         - 25
+        - 26
     - name: Debian
       versions:
         - jessie
+        - stretch
     - name: Ubuntu
       versions:
         - xenial
+    - name: Archlinux
+      versions:
+        - all
   galaxy_tags:
     - logs
     - metrics
