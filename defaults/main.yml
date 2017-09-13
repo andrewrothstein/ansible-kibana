@@ -1,8 +1,8 @@
 ---
-kibana_ver : '5.5.2'
+kibana_ver : '5.6.0'
 
-# https://artifacts.elastic.co/downloads/kibana/kibana-5.5.2-linux-x86_64.tar.gz
-kibana_checksum: sha256:4b879a36899d886c1264c6c2e0c662d56ebefee703fa4c62bca793124d3ebd5a
+# https://artifacts.elastic.co/downloads/kibana/kibana-5.6.0-linux-x86_64.tar.gz
+kibana_checksum: sha256:1feb6de22351a7f4109396d98fd788a7cd625ef23acbe3e85adf1801fef162f6
 kibana_platform : linux-x86_64
 kibana_mirror : https://artifacts.elastic.co/downloads/kibana
 
