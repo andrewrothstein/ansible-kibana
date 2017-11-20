@@ -1,21 +1,35 @@
 ---
-- name: download...
+- name: check for kibana installation...
   become: yes
-  become_user: root
-  get_url:
-    url: '{{kibana_tgz_url}}'
-    checksum: '{{kibana_checksum}}'
-    dest: /tmp/{{kibana_tgz}}
-    mode: 0644
-
-- name: unarchive...
-  become: yes
-  become_user: root
-  unarchive:
-    remote_src: yes
-    src: /tmp/{{kibana_tgz}}
-    dest: '{{kibana_parent_install_dir}}'
-    creates: '{{kibana_install_dir}}'
+  stat:
+    path: '{{kibana_install_dir}}'
+  changed_when: false
+  register: kibana_binary_dir
+- when: not kibana_binary_dir.stat.exists
+  block:
+    - name: download...
+      become: yes
+      become_user: root
+      get_url:
+        url: '{{kibana_tgz_url}}'
+        checksum: '{{kibana_checksum}}'
+        dest: /tmp/{{kibana_tgz}}
+        mode: 0644
+    - name: unarchive...
+      become: yes
+      become_user: root
+      unarchive:
+        remote_src: yes
+        src: /tmp/{{kibana_tgz}}
+        dest: '{{kibana_parent_install_dir}}'
+        creates: '{{kibana_install_dir}}'
+  always:
+    - name: cleanup...
+      become: yes
+      become_user: root
+      file:
+        path: /tmp/{{kibana_tgz}}
+        state: absent
 
 - name: link...
   become: yes
@@ -37,10 +51,3 @@
     dest: '{{item.d}}/{{item.f}}'
     mode: '{{item.m}}'
 
-- name: cleanup...
-  become: yes
-  become_user: root
-  when: kibana_cleanup
-  file:
-    path: /tmp/{{kibana_tgz}}
-    state: absent

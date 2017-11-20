@@ -1,11 +1,9 @@
 ---
-kibana_ver : '5.6.3'
+kibana_ver : '6.0.0'
 
-# https://artifacts.elastic.co/downloads/kibana/kibana-5.6.3-linux-x86_64.tar.gz
-kibana_checksum: sha256:6f3df48dabf51917252b1d99bea03a66e981812b27097645cc3cbb53281a1c71
+# https://artifacts.elastic.co/downloads/kibana/kibana-6.0.0-linux-x86_64.tar.gz
+kibana_checksum: sha256:52c582846cd814639cd5888ff6ad20c81d7319a673784935bc579cdcfb04680f
 kibana_platform : linux-x86_64
 kibana_mirror : https://artifacts.elastic.co/downloads/kibana
 
 kibana_parent_install_dir: /usr/local
-
-kibana_cleanup: False
