@@ -1,5 +1,5 @@
 ---
-kibana_ver : '6.2.3'
+kibana_ver : '6.2.4'
 kibana_platform : linux-x86_64
 
 kibana_mirror : https://artifacts.elastic.co/downloads/kibana
@@ -28,5 +28,8 @@ kibana_checksums:
   # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.3-linux-x86_64.tar.gz
   '6.2.3':
     linux-x86_64: sha256:ad3086fdd7560d3b6edb0e47b7672adbac439c28746662cea449e287d79e3e96
+  # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.4-linux-x86_64.tar.gz
+  '6.2.4':
+    linux-x86_64: sha256:53fb5ddcb3055209f8e3dffcad62d24bdbdedbe8e2f66c1773bac4a1f8b629af
 
 kibana_parent_install_dir: /usr/local
