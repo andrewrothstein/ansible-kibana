@@ -16,6 +16,8 @@ galaxy_info:
         - 24
         - 25
         - 26
+        - 27
+        - 28
     - name: Debian
       versions:
         - jessie
@@ -23,6 +25,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - xenial
+        - bionic
     - name: Archlinux
       versions:
         - all
@@ -32,4 +35,4 @@ galaxy_info:
 
 dependencies:
   - role: andrewrothstein.unarchive-deps
-    version: v1.0.9
+    version: v1.0.10
