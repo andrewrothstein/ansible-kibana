@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=6.4.3
+VER=6.5.1
 DIR=~/Downloads
 MIRROR=https://artifacts.elastic.co/downloads/kibana
 
