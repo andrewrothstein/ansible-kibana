@@ -1,5 +1,5 @@
 ---
-kibana_ver: '6.5.1'
+kibana_ver: '6.5.2'
 kibana_platform: linux-x86_64
 
 kibana_mirror: https://artifacts.elastic.co/downloads/kibana
@@ -45,5 +45,9 @@ kibana_checksums:
     darwin-x86_64: sha256:a3729b5579b19dbbc1fa2c9deb1de9566ae2eb07dc64efd8857271f614b64d42
     linux-x86_64: sha256:bbbcb59cc3f5e9b8e4dd747c72437360b101ae6d29f1e6df40fb2b39e4223752
     windows-x86_64: sha256:36cf357c683ef00e95811a70fd4b433fb5a8a9d85f1fe6b783cdeeae9fb70559
+  '6.5.2':
+    darwin-x86_64: sha256:01fcd50304705fd5d6919b24e202757b6d07d11278092e2c6a6bef21582234e7
+    linux-x86_64: sha256:aa17ec706aab6e419b65333d25054d3a99749938fdb9399572f3eb9e7d6d00cd
+    windows-x86_64: sha256:69b2fc980bc3ae741222f103c797ee8df2d2f4d900386db580ee9f47d74070c1
 
 kibana_parent_install_dir: /usr/local
