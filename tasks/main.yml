@@ -2,7 +2,7 @@
 - name: check for kibana installation...
   become: yes
   stat:
-    path: '{{kibana_install_dir}}'
+    path: '{{ kibana_install_dir }}'
   changed_when: false
   register: kibana_binary_dir
 - when: not kibana_binary_dir.stat.exists
@@ -11,32 +11,32 @@
       become: yes
       become_user: root
       get_url:
-        url: '{{kibana_tgz_url}}'
-        checksum: '{{kibana_checksum}}'
-        dest: /tmp/{{kibana_tgz}}
+        url: '{{ kibana_tgz_url }}'
+        checksum: '{{ kibana_checksum }}'
+        dest: /tmp/{{ kibana_tgz }}
         mode: 0644
     - name: unarchive...
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{kibana_tgz}}
-        dest: '{{kibana_parent_install_dir}}'
-        creates: '{{kibana_install_dir}}'
+        src: /tmp/{{ kibana_tgz }}
+        dest: '{{ kibana_parent_install_dir }}'
+        creates: '{{ kibana_install_dir }}'
   always:
     - name: cleanup...
       become: yes
       become_user: root
       file:
-        path: /tmp/{{kibana_tgz}}
+        path: /tmp/{{ kibana_tgz }}
         state: absent
 
 - name: link...
   become: yes
   become_user: root
   file:
-    src: '{{kibana_install_dir}}'
-    dest: '{{kibana_link_dir}}'
+    src: '{{ kibana_install_dir }}'
+    dest: '{{ kibana_link_dir }}'
     state: link
 
 - name: add to default path
@@ -47,6 +47,6 @@
       d: /etc/profile.d
       m: '0644'
   template:
-    src: '{{item.f}}.j2'
-    dest: '{{item.d}}/{{item.f}}'
-    mode: '{{item.m}}'
+    src: '{{ item.f }}.j2'
+    dest: '{{ item.d }}/{{ item.f }}'
+    mode: '{{ item.m }}'
