@@ -1,5 +1,5 @@
 ---
-kibana_ver: '6.7.0'
+kibana_ver: '7.0.0'
 kibana_platform: linux-x86_64
 
 kibana_mirror: https://artifacts.elastic.co/downloads/kibana
@@ -57,5 +57,9 @@ kibana_checksums:
     darwin-x86_64: sha256:bb500fd706c51fae5375c531ea1338f2836d584582932965b7e6b0a99a9c41e3
     linux-x86_64: sha256:5e88dadbedef9be6c388999210c80eb3c04e453fe4c9c02662e15efb40d3b40e
     windows-x86_64: sha256:a725274b54a613c7f64b6ba050cbcb571bb52a8911845923677836373ea82cab
+  '7.0.0':
+    linux-x86_64: sha512:647dd3900d70dfcf7c8f97d8a020f204b4e2f11c2fc23b4733618ad931f7876b37bfd885809632bbd05fdac75fbc0e233d48367ddb34801e1450b452af8e3f4a
+    darwin-x86_64: sha512:4c179f22f1247d66ba670e81d2f5fe43e812591984aa29f18d17d0b1ee923042323e87d6494d422aaa093abf3e60220f8dd6ff61d87d7b3de80d975b3af27c10
+    windows-x86_64: sha512:18999d9709df93071d8f1caded1dc9fd0de32ebf88563fc9138af70f28b1335f63b904f32c60fe75d29ebf462d4c38910ece6135513c1295d94d2a5c9da3e800
 
 kibana_parent_install_dir: /usr/local
