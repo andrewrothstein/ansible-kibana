@@ -1,74 +1,146 @@
 ---
-kibana_ver: '7.3.0'
-kibana_platform: linux-x86_64
+kibana_ver: '7.4.2'
+
+kibana_parent_install_dir: /usr/local
+
+kibana_os: linux
+kibana_arch: x86_64
 
 kibana_mirror: https://artifacts.elastic.co/downloads/kibana
 kibana_checksums:
   '6.0.1':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.0.1-linux-x86_64.tar.gz
-    linux-x86_64: sha256:3683af16f0cd5055f002614890309ab4d571312d0d99fc8a01e0026abfbb8199
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.0.1-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:3761f8abff5d949631f365c228af2f205597e1f05137d0140917b35128d2dcb79e32db355873864c1f01bce06121af71f1bfcb1679ae25903e1121bc76f68ecc
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.0.1-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:1ce85d19190445613826354420a16d206dc11c5f7bedbec22e38d8412e5dba0b1e78c32a3ca68b7629a99d59b7925f2b9f5af397e502b27655d804f936b1034f
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.0.1-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:e8149c66f2448c0ab57384b7dc2d9c02fe133c57b2b6cd5289e532b0ec447c82be2df2c637d3fa1d2ddc21c3f985f77e9278fae34290ae4bb4f37479f9ff270b
   '6.1.0':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.0-linux-x86_64.tar.gz
-    linux-x86_64: sha256:64e41cc58e34e0c067da70c94829ad9e31218b40bfbd35ca2a42460293949322
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.0-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:4691e3a2247e5917c77ecb92ca093249bd64ee2c3027f4a50aeb639bb2e3e238ccc89685f52eef47ae1ecf33136ecb2e8b1a18a27975a5326b64ac0f277e10b1
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.0-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:286e21a9e94ef6e6e1006fa473172911751dd7a839cd2b0c34a3e215a0916182243bf5c06c618abfe5840588a14da4599e75eeba2c1acb2aded8146c125e5a4b
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.0-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:1089e15eace4b94d5f9c84d7d95217be3ba82bcf415e34bc49402d84e226cb70e670c494fcbea462c0cbfbea8c28754b078412252f3be9576d7a8173ad2dc4a0
   '6.1.1':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.1-linux-x86_64.tar.gz
-    linux-x86_64: sha256:86dc1d1b5ddb85063e08bfd9e863f876ed75267d6a629e7a63353a4d26758720
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.1-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:0da25dd9882de3b7c5b7d8908436fccbd921db1e06bf3f34e998fd54729588a54a686f2eefe2bfa3044b0ec40a81f7a62c811d43798c32ab61480b317973a5b5
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.1-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:50f4d95f83ddfaf73f5bc89c2c8513af2ab28fe6f0e24315aa19f04eddd5fb1b24fb440b9071b2d5a46bf498d4306ce1c91882ad49baaecb831ba23748c28e74
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.1-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:1d9138e6d6700bf33f4a3931a630fa6d3aa8675a58850fe2ee9f168aa11a270335af1e17d83dcc7e8cf3dcda1d5376963dde743aca9031ea5035caa8c13e9832
   '6.1.2':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.2-linux-x86_64.tar.gz
-    linux-x86_64: sha256:5dba3de6e2a4dfc7cbf81ef93529a4457436207812314767acf97364a553fa4d
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.2-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:eefe3ae73e08c0cd14c5c7d7f962dc78cdfff1096895a1ab539f172b84dfa0d8c197d99573ac7dea6c60adb89b5e3fd5be10dddd749c060c540b30c34426c8a1
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.2-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:068371cc90974ef3acd758730b6fe6011af5fd72b981ede8ceab87b593e3ec329233e27624a6ac540544b855b00bfbcf5fa3ef2bb7c602f44b626f9dfd88c0dc
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.2-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:62e8c69a37e6689cc9c4f82a4e19756648a1cbfa3654721bcfe9ff1498ad5bc0b68f2805e7801149b94a7404e6d4ea01ae6aec2799cb57fb3eb64e97664c1552
   '6.1.3':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.3-linux-x86_64.tar.gz
-    linux-x86_64: sha256:19caf0c29db6c98c8bf5194deba0de7ce065cc10bc2175af6f4efdbc3b88e2a7
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.3-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:1478215b8ac735d69ea6c5d019a44d8ea40e5e400c13e2c4031bf1b4edb3b796cdecf4a97669dfa27d1a976e0246235e1628a036196d3d70bcb95323d10de5b8
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.3-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:5eab0cb0439089da0b858c916be182ffeb7219c9f7787e24d50ae5c325e23ed530495c37bf75af133e00509186d0b869111e1c5e912366f00a0f8a6b0535b58e
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.1.3-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:8670f9dc3d050eb1f8ec1cd2cf89c9dd53a1931106ccf61324cc104c012cc50536d85610e3a252bdf7421264ebae30eb0a449a7b710777b21d24d1d3ffd86c80
   '6.2.1':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.1-linux-x86_64.tar.gz
-    linux-x86_64: sha256:1f13bb3f9e7197efaaec410ee1591f7ae07e1c7431e546c1c67dee8815f46aa9
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.1-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:2d96061c5538761179a2e9e78fbd494e8fe42927f9818ee752fa9c938d82befdb37fde52c813b7c75f442675c6e62e20c56c1a13a07e2e43944dd0849af69daa
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.1-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:e84a10af8defc4947cd4389ff390ddcd9a945fd0dfefd26a3120d23845ebacf4a8d27002f2f0aafa1201df1a375713d657e43279fb9e6345df251ecafc56cacd
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.1-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:3f9cdc37794a9e4f006f6f4fd4b2402d28347a299c290bedcc5a934b7b409d0367fb2a7f6ebfa997d0c6ffe41744a7f5a2c5d55d8601331aa689650ec5459233
   '6.2.2':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.2-linux-x86_64.tar.gz
-    linux-x86_64: sha256:225b5c72e333c7e872f3d97f2ab4039e29a7a8bee02f0feb57744dbc59e67abe
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.2-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:8d26eb8293028aa0c35942a7b5025401f9b717d5c548d6cdbcf2761c0d8cc1189fdbf12c6f39468d4c809a3975f5f3c817e0f02424b296ce36183e118b0c72c6
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.2-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:1a8620ef50dc645f33b9f4decd959ec4e568db74ffe6089186d627b7b060b005e39012674460446f6abcce324508229d4fbc86d7673ef624abcb0f09f999a3a9
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.2-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:c87f99652a64d0390654cf83b738063e8e20e0511d495a3d237027fd409a15d41ede0ee0ef188f5a3e78a9cc61a1a2d80d6e20e6ad1ee6dd087bf0aa45b14a75
   '6.2.3':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.3-linux-x86_64.tar.gz
-    linux-x86_64: sha256:ad3086fdd7560d3b6edb0e47b7672adbac439c28746662cea449e287d79e3e96
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.3-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:29a3cb1e4dcea8091f740625702fd67e214d13da7522a579042183bd1adf5a0963a492b3a0993e5496407fb5519860ea84e99c075ed8d12347b4117edcc4f457
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.3-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:ab7b882eab2176c7c3c6301d80e7d2f4a845b713a0654359491ab269b73a77cf4517c591959752894a96cd147c8d2cbad8854ead22a04c0ae2aed6e8f44b7505
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.3-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:5ccd0ccac46131b28238b7a4325108bd4cbe398e3e74d154d4c45d67b93ffd6c31768045b285614ca58e48246a2b02454058a8f4a494c38d098817e6a2b62ea4
   '6.2.4':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.4-linux-x86_64.tar.gz
-    linux-x86_64: sha256:53fb5ddcb3055209f8e3dffcad62d24bdbdedbe8e2f66c1773bac4a1f8b629af
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.4-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:125c2002e1a3b197f9f0d6200f2979f2e5974a902bfec2baa4b34a0c8d55babccafdb87b8a7b69c61ca4c02b8ae97e69b9b2743f7d445f0e53e31c69288296d5
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.4-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:4d1a0ff97a099bddb74878418024920e8068b8abf3fe5e4584fe97c8bfe3c8cfcd8a9474a95505201ad46261b14016aef45170d328e6b834412973c8e54ee905
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.2.4-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:531033b133629de2067c6c86e031e43e6daf1c3ab63c9764b5082f4be48dd1a98fa8a6c7783550d3aa7fb5a50a2c07fc1e87e708fddee6b2a411e1b1f8ea4229
   '6.4.1':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.1-linux-x86_64.tar.gz
-    linux-x86_64: sha256:6c6fa47450cb05b96b97166a627d07c76591909da82d3bca0708bdebb889bf86
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.1-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:d737ff872ef11d47bc691d8ac4817df21c3a33dd37c8aa7170c367a62c0241c56844d7985fd986bd097a12f3b15669910619bed2f4fbb2e1964f8c0fcad0e483
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.1-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:cb6e8354916ec8563cc031c2893331c5def78a788a283bd9914287ecb9694c7a0978498c38abdf1c9d534c933accb46313eb831526c8319377c74e093dcff59d
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.1-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:7b1e9514687e94a6827ba9e14bcbdb24c721f30aeb5d445876c576e5f4d8499cf9fe65eb5cb8de83de432b85f026fa31309d03782ee55a55026ab50c395ba353
   '6.4.2':
-    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.2-linux-x86_64.tar.gz
-    linux-x86_64: sha256:f3a69709171ea8e28da754578ec519f33c423d3e3cbed6e81381f14cb8517383
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.2-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:b3b422c3bd157e363f528a27f5243f2ee13eba3e3bb22e1a7a9f24ea33f75b864643e297047379dfbef040a0eaa05ed6d998dd2cfe798b9d058f5b3d346f4d1d
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.2-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:e2faeeb467a52ab86aadbc664d91fd77f376f96b52179bcce0e2358cdc05a4b1cb3a6210e7f3debcf97d65cebf6174c58c12d000bf2d52494a67e1ab8aee805d
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.2-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:b23f8c0b81f200cdb27c7cf7d6aa5a0a9fe7b78c0b2f242d4d720e25ee9e58fa329a96ddacfd792d3365fb46fb797279c44492bd46c592f4dd3624be392cffb1
   '6.4.3':
-    darwin-x86_64: sha256:ac70e261057f85557bad5035c6ed939c54cd09ea4ff8a831692a9a59f8212e4a
-    linux-x86_64: sha256:5f1fe4f464bbfeccbd79c620ad728c1537b6f92af54b31e9cc7c4e86adce4c2c
-    windows-x86_64: sha256:1d744e0e0822d03c933220a3314ae1dcdb7e36be06be1fdabca6d1a4dd7d3fbb
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.3-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:f247078bfa7435239f9b9258a1563e73e17662735a83b154a02809f9c383f56cec68a3c189c84f43ecd2d9e4abc25d55f6593dd79b725fd79820f92d8543d244
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.3-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:63011fa4228cd09b53a92f54e76928b52c58fcc8a66e905ba3ba88fabd5040d0acfc3759f9d3e6cd1c2c69640d3ea48167a732db4beb2eed9e51c21a4b7a210d
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.4.3-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:7b73624e4b8499f618f15842a7d1b7b63c18eca8868d39376f3afaaec13c93187c9943bd2802828a8aca56214950362c6b3e616f8fda4d8294c89408ef41b0a6
   '6.5.1':
-    darwin-x86_64: sha256:a3729b5579b19dbbc1fa2c9deb1de9566ae2eb07dc64efd8857271f614b64d42
-    linux-x86_64: sha256:bbbcb59cc3f5e9b8e4dd747c72437360b101ae6d29f1e6df40fb2b39e4223752
-    windows-x86_64: sha256:36cf357c683ef00e95811a70fd4b433fb5a8a9d85f1fe6b783cdeeae9fb70559
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.5.1-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:4dda457833c5608c3ffe73513efad2e7bf526f6b9070db574b3f5b22fdb193594dfdc704f25f29cac831a164065512260ba807b761ebdfef44179239674ae318
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.5.1-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:804c7ac8a8de94f3093261d51054c848a7444b42cea5b3a27a82bfd11f883cec704115837bec1922e78e3d7e26feaf4160ba1751ac226db4406149b5a13818c2
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.5.1-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:4ca3af736172a553b133b360a5fa420f36aaffb9f3a3382836451b6f749275493401b42e149505f9087a0b52c5f8b1bb9a9b4252d9c06c48117b4bd8572339fc
   '6.5.2':
-    darwin-x86_64: sha256:01fcd50304705fd5d6919b24e202757b6d07d11278092e2c6a6bef21582234e7
-    linux-x86_64: sha256:aa17ec706aab6e419b65333d25054d3a99749938fdb9399572f3eb9e7d6d00cd
-    windows-x86_64: sha256:69b2fc980bc3ae741222f103c797ee8df2d2f4d900386db580ee9f47d74070c1
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.5.2-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:a2ec63533f74b26ce590a322c5f1d6b1b2d4502501cbec8692dd055f4e794ca11fd30e9ee429fcf0eef97a106b9f58b9d7879de19fd310b9421b0c04dd516250
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.5.2-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:4355a28e868f2c58567d73c751902349aa1047b8a331da62101a174c291ce0a86b16fae32859927940004dd4c0e0cd84f85a74a0ac0199910d6a197503c6e5a1
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.5.2-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:dc7f10e605331780ac12450809f832a531dbd18c7fd719b5a242d4052a17b8c4cd089509f4eee7685296969824546a30373897a9e916bf7057c0359afd7aeb5e
   '6.6.2':
-    darwin-x86_64: sha256:4109dc969d572b87dd05ef95e32ba0afddedb250c150d46e2b428ec4a4431822
-    linux-x86_64: sha256:45b32f6053c683bf8ba2cb0841c1ee705e524586a2aa3547afcca629fea0a6b0
-    windows-x86_64: sha256:5e15d1c4e183fe22fe47d86dec3c068c6a46ec46cb37d44cd5e1ccceac991a2f
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.6.2-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:9cc392c5f3de3b340a15903b2f0472405e6a6ea209a9b101a9d573aa304774c516f617b7a2c64f2a9523d74f5f3c847e16f6d7c81cc65d8b17bbed268bbb7065
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.6.2-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:537c6bd7fffbc79cbcfcb3e3219896f4d456e7c464d13c0b87347f7c28ba5ed098224d710639a349a06f318de87cca83bcdbb21f8b383e9b75d7209c54a0a240
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.6.2-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:2147bd9700f4dbdb07938b67b77fd1eea3d1c591157d4cd249ad9543529d8239fd8eec783d3b6f800a5a35369fb3d722730cd88c625090119cd7fcdccc997ee1
   '6.7.0':
-    darwin-x86_64: sha256:bb500fd706c51fae5375c531ea1338f2836d584582932965b7e6b0a99a9c41e3
-    linux-x86_64: sha256:5e88dadbedef9be6c388999210c80eb3c04e453fe4c9c02662e15efb40d3b40e
-    windows-x86_64: sha256:a725274b54a613c7f64b6ba050cbcb571bb52a8911845923677836373ea82cab
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.7.0-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:ef5acfc2a94e49994cca8cb019d0f2efbb591e05bc08f5285a7155409f8c499968f14da85d4c07b99195722f93909a54d52395ebc25de4776312c076ea1de640
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.7.0-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:b7f8db30bd9dcafaebe537ecee108be32c9c08bfe3b09fea3a18b5b8dabc4859d4dc1d2bb1ab78a8ba52e6df65550effc185688720f2d5b795fed6bfb0439cb1
+    # https://artifacts.elastic.co/downloads/kibana/kibana-6.7.0-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:88b99cf70c301609cca81fdaa84a0e4f43a44e51a9540ec8f10107b98a9534ecf37b8e85384ef96551c88aeef446488b47f77a540967df7006e7a5bcb9aaf748
   '7.0.0':
-    linux-x86_64: sha512:647dd3900d70dfcf7c8f97d8a020f204b4e2f11c2fc23b4733618ad931f7876b37bfd885809632bbd05fdac75fbc0e233d48367ddb34801e1450b452af8e3f4a
-    darwin-x86_64: sha512:4c179f22f1247d66ba670e81d2f5fe43e812591984aa29f18d17d0b1ee923042323e87d6494d422aaa093abf3e60220f8dd6ff61d87d7b3de80d975b3af27c10
-    windows-x86_64: sha512:18999d9709df93071d8f1caded1dc9fd0de32ebf88563fc9138af70f28b1335f63b904f32c60fe75d29ebf462d4c38910ece6135513c1295d94d2a5c9da3e800
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.0.0-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:647dd3900d70dfcf7c8f97d8a020f204b4e2f11c2fc23b4733618ad931f7876b37bfd885809632bbd05fdac75fbc0e233d48367ddb34801e1450b452af8e3f4a
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.0.0-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:4c179f22f1247d66ba670e81d2f5fe43e812591984aa29f18d17d0b1ee923042323e87d6494d422aaa093abf3e60220f8dd6ff61d87d7b3de80d975b3af27c10
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.0.0-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:18999d9709df93071d8f1caded1dc9fd0de32ebf88563fc9138af70f28b1335f63b904f32c60fe75d29ebf462d4c38910ece6135513c1295d94d2a5c9da3e800
   '7.1.0':
-    linux-x86_64: sha512:8f99561333e586a53a2992d0fe0dbfe6ecb88d09d02746487326a873b9841c255ec1a6d7f75bf9db04521f4b6a60564429c23db841885f680999b45b0b6126f9
-    darwin-x86_64: sha512:7efbd6b75f0738e0c594404a161fa70c0e9923ad640ae4a269440e88ebc6ed092966db6a706ff90637925c243de0012d0ed3dae8c093867fd21edc2e6376c571
-    windows-x86_64: sha512:2c271c1f57a2a502ae3e1d1526935c063ca270d632a1d0a4afd06df08409c7d0718cba5663027174a19616105b9ed1fc27a3a8988d8a9b0fefeca8494eae2dea
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.1.0-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:8f99561333e586a53a2992d0fe0dbfe6ecb88d09d02746487326a873b9841c255ec1a6d7f75bf9db04521f4b6a60564429c23db841885f680999b45b0b6126f9
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.1.0-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:7efbd6b75f0738e0c594404a161fa70c0e9923ad640ae4a269440e88ebc6ed092966db6a706ff90637925c243de0012d0ed3dae8c093867fd21edc2e6376c571
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.1.0-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:2c271c1f57a2a502ae3e1d1526935c063ca270d632a1d0a4afd06df08409c7d0718cba5663027174a19616105b9ed1fc27a3a8988d8a9b0fefeca8494eae2dea
   '7.1.1':
-    linux-x86_64: sha512:5b4982951eeb57277239e6c5268a82073cde73d5a2f18171c9a4306cbb2449889002e65374db5eb082ea6c9a6279a166b104ec96481966240eb56b730a7c3220
-    darwin-x86_64: sha512:6bcd6b6e1e10ceba53f731c186bd75ba23704c7b2ec266dcf9f34072115ad4ae121c4200c44177fdaed72c4a3db36ecc07438c63846ace67f0123111beccda60
-    windows-x86_64: sha512:8930a4d457d20f3939d9f52c60b1a964fa69276c59fa3ba3a799a8617b755451efb51437f59a589498c6eea19acd3ff650be49c36639ffed21a1e96361a349b1
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.1.1-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:5b4982951eeb57277239e6c5268a82073cde73d5a2f18171c9a4306cbb2449889002e65374db5eb082ea6c9a6279a166b104ec96481966240eb56b730a7c3220
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.1.1-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:6bcd6b6e1e10ceba53f731c186bd75ba23704c7b2ec266dcf9f34072115ad4ae121c4200c44177fdaed72c4a3db36ecc07438c63846ace67f0123111beccda60
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.1.1-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:8930a4d457d20f3939d9f52c60b1a964fa69276c59fa3ba3a799a8617b755451efb51437f59a589498c6eea19acd3ff650be49c36639ffed21a1e96361a349b1
   '7.2.0':
     # https://artifacts.elastic.co/downloads/kibana/kibana-7.2.0-linux-x86_64.tar.gz.sha512
     linux-x86_64: sha512:78368be3c55ef09cfed6903cc6556edb1a77f9e548614535b261d13c3190052ee9571cbb686470662f5563c564f1256e3a31ca233a26e8b734f3df44ab5a97f0
@@ -83,5 +155,10 @@ kibana_checksums:
     darwin-x86_64: sha512:3bd33233c290e264d5a4bdb0e48d996b9c10016affc709d7804b5949a1b844e52cc6091d35c25da53d6ac2e36289a50236d962e3008583daa887d4ddcd4b492d
     # https://artifacts.elastic.co/downloads/kibana/kibana-7.3.0-windows-x86_64.zip.sha512
     windows-x86_64: sha512:fd077ff716c036eb6a35798ae62e4b013f270d05a34bff8c783002648069285d28a1f8dff0d0d712a7b16956ddd1a20a56b9300bf034eb9df28c6818a2eb5f26
-
-kibana_parent_install_dir: /usr/local
+  '7.4.2':
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.4.2-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:41c18340c204c82d03d24eda8bd5915e6f762868f39ecea53f4571a2fb7348df383606f30f5d3d56a9cb5953422efcfc5a09e6a0590d4e2ce55990efe298b331
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.4.2-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:d5eddedc0a945fd085442241fde1652811cd020de62cee630d91e6f6f69089b8c70bcee869dad551beb14a24fa6aee3ac87d1c0e1e0c3d4abd83a65bdcc69823
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.4.2-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:a5ca936643d9c7586e266c90d9e5975b61f34799b4eb74f9ce458d341a14079ea7575c9834de12f79a9fc9958e51c3dff341c28dea98fe3fc17c54dfe8b01de4

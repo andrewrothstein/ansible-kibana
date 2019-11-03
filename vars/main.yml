@@ -1,9 +1,10 @@
 ---
 # vars file for kibana
+kibana_platform: '{{ kibana_os }}-{{ kibana_arch }}'
 kibana_name: 'kibana-{{ kibana_ver }}-{{ kibana_platform }}'
-kibana_tgz: '{{ kibana_name }}.tar.gz'
+kibana_archive: '{{ kibana_name }}.{{ kibana_archive_type | default("tar.gz") }}'
 
-kibana_tgz_url: '{{ kibana_mirror }}/{{ kibana_tgz }}'
+kibana_archive_url: '{{ kibana_mirror }}/{{ kibana_archive }}'
 kibana_checksum: '{{ kibana_checksums[kibana_ver][kibana_platform] }}'
 
 kibana_install_dir: '{{ kibana_parent_install_dir }}/{{ kibana_name }}'
