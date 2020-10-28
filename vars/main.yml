@@ -3,6 +3,7 @@
 kibana_platform: '{{ kibana_os }}-{{ kibana_arch }}'
 kibana_name: 'kibana-{{ kibana_ver }}-{{ kibana_platform }}'
 kibana_archive: '{{ kibana_name }}.{{ kibana_archive_type | default("tar.gz") }}'
+kibana_tmp_archive: /tmp/{{ kibana_archive }}
 
 kibana_archive_url: '{{ kibana_mirror }}/{{ kibana_archive }}'
 kibana_checksum: '{{ kibana_checksums[kibana_ver][kibana_platform] }}'
