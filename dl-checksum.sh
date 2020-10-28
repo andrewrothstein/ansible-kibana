@@ -23,24 +23,4 @@ dl_ver() {
     dl $ver windows x86_64 zip
 }
 
-#dl_ver ${1:-7.4.2}
-dl_ver 6.0.1
-dl_ver 6.1.0
-dl_ver 6.1.1
-dl_ver 6.1.2
-dl_ver 6.1.3
-dl_ver 6.2.1
-dl_ver 6.2.2
-dl_ver 6.2.3
-dl_ver 6.2.4
-dl_ver 6.4.1
-dl_ver 6.4.2
-dl_ver 6.4.3
-dl_ver 6.5.1
-dl_ver 6.5.2
-dl_ver 6.6.2
-dl_ver 6.7.0
-dl_ver 7.0.0
-dl_ver 7.1.0
-dl_ver 7.1.1
-
+dl_ver ${1:-7.9.3}
