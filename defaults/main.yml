@@ -1,5 +1,5 @@
 ---
-kibana_ver: 7.10.1
+kibana_ver: 7.10.2
 
 kibana_parent_install_dir: /usr/local
 
@@ -183,3 +183,10 @@ kibana_checksums:
     'darwin-x86_64': sha512:d66f1aec6cf8b58a032b352d9e379f44276b1dded530d8f54fa22d2a608bf88471db487265d474bddf208613d03ef8f565b99d3f780e238b13f57971ad376422
     # https://artifacts.elastic.co/downloads/kibana/kibana-7.10.1-windows-x86_64.zip.sha512
     'windows-x86_64': sha512:9f0a9f377d92fed1962ff8d875dc496b3872ee7bd8b1630aea93d587159f9fe320ccf34da4fdc4fe17894261c1db7e7b569e4cc2f0ee26d4fca2635f1e9da76b
+  '7.10.2':
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.10.2-linux-x86_64.tar.gz.sha512
+    'linux-x86_64': sha512:aa68f850cc09cf5dcb7c0b48bb8df788ca58eaad38d96141b8e59917fd38b42c728c0968f7cb2c8132c5aaeb595525cdde0859554346c496f53c569e03abe412
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.10.2-darwin-x86_64.tar.gz.sha512
+    'darwin-x86_64': sha512:3d6fc466a576cfc4e83f5816323b836e597bd8798ddc2c27b43f231eca3ad33cd7aaefd31d1596ee020ef3330578111291a90138e99a154cd96a9eb887931360
+    # https://artifacts.elastic.co/downloads/kibana/kibana-7.10.2-windows-x86_64.zip.sha512
+    'windows-x86_64': sha512:88d36fcd50ef3de252b3e3708a3e228cad15201561857d99e0bfae55e067349fd78149024276bf46b827473acc63d742c7ffe7340a531cfea43058adef61795a
