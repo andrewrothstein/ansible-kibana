@@ -1,6 +1,6 @@
 andrewrothstein.kibana
 =============================
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-kibana.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-kibana)
+![Build Status](https://github.com/andrewrothstein/ansible-kibana/actions/workflows/build.yml/badge.svg)
 
 Installs [Kibana](https://www.elastic.co/products/kibana)
 
