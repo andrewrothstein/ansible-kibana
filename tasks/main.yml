@@ -1,52 +1,55 @@
 ---
-- name: check for kibana installation in {{ kibana_install_dir }}
-  become: yes
-  stat:
+- name: Check for kibana installation in {{ kibana_install_dir }}
+  become: true
+  ansible.builtin.stat:
     path: '{{ kibana_install_dir }}'
   changed_when: false
   register: kibana_binary_dir
-- when: not kibana_binary_dir.stat.exists
+- name: Downloading and installing...
+  when: not kibana_binary_dir.stat.exists
   block:
-    - name: downloading {{ kibana_archive_url }} to {{ kibana_tmp_archive }}
-      become: yes
+    - name: Downloading {{ kibana_archive_url }} to {{ kibana_tmp_archive }}
+      become: true
       become_user: root
-      get_url:
+      ansible.builtin.get_url:
         url: '{{ kibana_archive_url }}'
         checksum: '{{ kibana_checksum }}'
         dest: '{{ kibana_tmp_archive }}'
-        mode: 0644
-    - name: unarchiving {{ kibana_tmp_archive }} to {{ kibana_parent_install_dir }}
-      become: yes
+        mode: '644'
+    - name: Installing andrewrothstein.unarchivedeps
+      ansible.builtin.include_role:
+        name: andrewrothstein.unarchivedeps
+    - name: Unarchiving {{ kibana_tmp_archive }} to {{ kibana_parent_install_dir }}
+      become: true
       become_user: root
-      unarchive:
-        remote_src: yes
+      ansible.builtin.unarchive:
+        remote_src: true
         src: '{{ kibana_tmp_archive }}'
         dest: '{{ kibana_parent_install_dir }}'
         creates: '{{ kibana_install_dir }}'
   always:
-    - name: cleanup {{ kibana_tmp_archive }}
-      become: yes
+    - name: Cleanup {{ kibana_tmp_archive }}
+      become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ kibana_tmp_archive }}'
         state: absent
 
-- name: link {{ kibana_link_dir }} to {{ kibana_install_dir }}
-  become: yes
+- name: Link {{ kibana_link_dir }} to {{ kibana_install_dir }}
+  become: true
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ kibana_install_dir }}'
     dest: '{{ kibana_link_dir }}'
     state: link
 
-- name: add to default path
-  become: yes
+- name: Add to default path
+  become: true
   become_user: root
   with_items:
     - f: kibana.sh
       d: /etc/profile.d
-      m: '0644'
-  template:
+  ansible.builtin.template:
     src: '{{ item.f }}.j2'
     dest: '{{ item.d }}/{{ item.f }}'
-    mode: '{{ item.m }}'
+    mode: '{{ item.m | default("644") }}'

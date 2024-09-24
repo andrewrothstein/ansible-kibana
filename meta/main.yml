@@ -1,31 +1,31 @@
-dependencies:
-- role: andrewrothstein.unarchive-deps
-  version: v1.2.0
+---
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
   description: kibana role
   galaxy_tags:
-  - logs
-  - metrics
-  license:
-  - MIT
-  min_ansible_version: 2.0
+    - logs
+    - metrics
+  license: MIT
+  min_ansible_version: '2.0'
+  namespace: andrewrothstein
   platforms:
-  - name: Archlinux
-    versions:
-    - all
-  - name: Debian
-    versions:
-    - bullseye
-    - buster
-  - name: EL
-    versions:
-    - 8
-  - name: Fedora
-    versions:
-    - 34
-  - name: Ubuntu
-    versions:
-    - bionic
-    - focal
+    - name: ArchLinux
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - bookworm
+        - bullseye
+    - name: EL
+      versions:
+        - '9'
+    - name: Fedora
+      versions:
+        - '39'
+        - '40'
+    - name: Ubuntu
+      versions:
+        - jammy
+        - noble
+  role_name: kibana

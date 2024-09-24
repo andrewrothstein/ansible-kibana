@@ -8,5 +8,5 @@ kibana_tmp_archive: /tmp/{{ kibana_archive }}
 kibana_archive_url: '{{ kibana_mirror }}/{{ kibana_archive }}'
 kibana_checksum: '{{ kibana_checksums[kibana_ver][kibana_platform] }}'
 
-kibana_install_dir: '{{ kibana_parent_install_dir }}/{{ kibana_name }}'
+kibana_install_dir: '{{ kibana_parent_install_dir }}/kibana-{{ kibana_ver }}'
 kibana_link_dir: '{{ kibana_parent_install_dir }}/kibana'

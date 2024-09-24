@@ -1,9 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.kibana
+  hosts: all
   roles:
-    - role: '{{playbook_dir}}'
+    - role: '{{ playbook_dir }}'
   tasks:
-    - command: /usr/local/kibana/bin/kibana --allow-root --version
+    - name: Executing 'kibana --allow-root --version'
+      ansible.builtin.command: sh -lc 'kibana --allow-root --version'
+      changed_when: false
       register: kibana_test_output
-    - debug:
+    - name: Output of 'kibana --allow-root --version'
+      ansible.builtin.debug:
         msg: '{{ kibana_test_output.stdout }}'
